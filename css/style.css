@@ -283,3 +283,11 @@ MOLTO COMPLICATO RISPETTO AL SECONDO METODO, CHIEDI COSA CAMBIA.
     background-size: contain;
     background-position: center;
 }
+
+.nero:hover{
+  color: #000;
+}
+
+a:hover{
+  text-decoration: underline;
+}
