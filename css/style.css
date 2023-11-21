@@ -110,7 +110,10 @@ nav li{
     height: 100%;
     width: auto;
     display: block;
+    position: relative;
+    z-index: -1;
 }
+
 /*Creo lo spazio per inserire il testo sull'immagine*/
 .card-box{
     /*border: 1px solid darkblue;*/
@@ -165,4 +168,79 @@ h4{
 }
 .footer-icons li{
     padding: 0 2px;
+}
+
+/*CREO L'HOVER PER OGNI PRODOTTO*/
+
+#relaxed-tee:hover::after{
+    content: "";
+    background-image: url('../img/1b.webp');
+    background-size: contain;
+    background-position: center;    
+    position: absolute;
+    z-index: -1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+#roses-tee:hover::after{
+    content: "";
+    background-image: url('../img/2b.webp');
+    background-size: contain;
+    background-position: center;    
+    position: absolute;
+    z-index: -1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+#completo:hover::after{
+    content: "";
+    background-image: url('../img/3b.webp');
+    background-size: contain;
+    background-position: center;    
+    position: absolute;
+    z-index: -1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+#tee-unisex:hover::after{
+    content: "";
+    background-image: url('../img/4b.webp');
+    background-size: contain;
+    background-position: center;    
+    position: absolute;
+    z-index: -1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+#abito:hover::after{
+    content: "";
+    background-image: url('../img/5b.webp');
+    background-size: contain;
+    background-position: center;    
+    position: absolute;
+    z-index: -1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+#maglione:hover::after{
+    content: "";
+    background-image: url('../img/6b.webp');
+    background-size: contain;
+    background-position: center;    
+    position: absolute;
+    z-index: -1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
 }
