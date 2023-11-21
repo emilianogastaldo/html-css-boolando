@@ -172,6 +172,8 @@ h4{
 
 /*CREO L'HOVER PER OGNI PRODOTTO*/
 
+/* QUESTO PRIMO METODO NON L'HO MOLTO CAPITO E LO TROVO
+MOLTO COMPLICATO RISPETTO AL SECONDO METODO, CHIEDI COSA CAMBIA.
 #relaxed-tee:hover::after{
     content: "";
     background-image: url('../img/1b.webp');
@@ -242,5 +244,42 @@ h4{
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;    
+    left: 0; 
+}
+*/
+/*SECONDO METODO HOVER*/
+/*CREO IL CUORE ROSSO*/
+.liked:hover{
+    color: red;
+}
+/*SCOPRI SE SI RIESCE A CENTRALIZZARE*/
+#relaxed-tee:hover{
+    background-image: url(../img/1b.webp);
+    background-size: contain;
+    background-position: center;
+}
+#roses-tee:hover{
+    background-image: url(../img/2b.webp);
+    background-size: contain;
+    background-position: center;    
+}
+#completo:hover{
+    background-image: url(../img/3b.webp);
+    background-size: contain;
+    background-position: center;    
+}
+#tee-unisex:hover{
+    background-image: url(../img/4b.webp);
+    background-size: contain;
+    background-position: center;    
+}
+#abito:hover{
+    background-image: url(../img/5b.webp);
+    background-size: contain;
+    background-position: center;    
+}
+#maglione:hover{
+    background-image: url(../img/6b.webp);
+    background-size: contain;
+    background-position: center;
 }
