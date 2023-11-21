@@ -53,7 +53,12 @@ a{
     color: #fff;
     font-weight: 600;
 }
-
+.dis-none{
+    display: none;
+}
+.dis-block{
+    display: block;
+}
 /*HEADER*/
 header{
     background-color: #FF6900 ;
@@ -109,9 +114,9 @@ nav li{
 .card-image{
     height: 100%;
     width: auto;
-    display: block;
+    /*display: block;*/
     position: relative;
-    z-index: -1;
+    z-index: -2;
 }
 
 /*Creo lo spazio per inserire il testo sull'immagine*/
@@ -172,6 +177,28 @@ h4{
 
 /*CREO L'HOVER PER OGNI PRODOTTO*/
 
+/*CREO IL CUORE ROSSO*/
+.liked:hover{
+    color: red;
+}
+/*QUALCHE CARINERIA PER ICONE E LINK*/
+.nero:hover{
+  color: #000;
+}
+a:hover{
+  text-decoration: underline;
+}
+/*TERZA MANIERA: gioco con il display none e block, devo mettere le foto
+nell'html, così risparmio di dover scrivere un sacco di codice per ogni
+singola foto.
+Basta far cambiare i display alle due foto quando passo sopra con il mouse.
+*/
+.card-box:hover .dis-none{
+    display: block;
+}
+.card-box:hover .dis-block{
+    display: none;
+}
 /* QUESTO PRIMO METODO NON L'HO MOLTO CAPITO E LO TROVO
 MOLTO COMPLICATO RISPETTO AL SECONDO METODO, CHIEDI COSA CAMBIA.
 #relaxed-tee:hover::after{
@@ -247,12 +274,8 @@ MOLTO COMPLICATO RISPETTO AL SECONDO METODO, CHIEDI COSA CAMBIA.
     left: 0; 
 }
 */
-/*SECONDO METODO HOVER*/
-/*CREO IL CUORE ROSSO*/
-.liked:hover{
-    color: red;
-}
-/*SCOPRI SE SI RIESCE A CENTRALIZZARE*/
+/*SECONDO METODO HOVER
+SCOPRI SE SI RIESCE A CENTRALIZZARE
 #relaxed-tee:hover{
     background-image: url(../img/1b.webp);
     background-size: contain;
@@ -283,11 +306,6 @@ MOLTO COMPLICATO RISPETTO AL SECONDO METODO, CHIEDI COSA CAMBIA.
     background-size: contain;
     background-position: center;
 }
+*/
 
-.nero:hover{
-  color: #000;
-}
-
-a:hover{
-  text-decoration: underline;
-}
+/*TERZO METODO CON DISPLAY NONE E INLINE-BLOCK*/
