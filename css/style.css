@@ -8,7 +8,7 @@
 /*GENERICS*/
 body{
     padding-top: 100px;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
 }
 img{
     max-width: 100%;
@@ -23,19 +23,43 @@ a{
     text-decoration: none;
     color: #fff;
 }
+
 /*UTILITIES*/
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid black
+    /*border: 1px solid black*/
 }
-
+.brand{
+    font-size: small;
+}
+.product{
+    font-weight: 700;
+}
+.price{
+    color: red;
+    font-size: small;
+    font-weight: 700;
+}
+.price.old{
+    color: black;
+    font-weight: 100;
+    text-decoration: line-through;
+    padding-left: 6px;
+}
+.label{
+    background-color: black;
+    padding: 3px 15px;
+    color: #fff;
+    font-weight: 600;
+}
 
 /*HEADER*/
 header{
     background-color: #FF6900 ;
     color: #fff;
     position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
     right: 0;
@@ -67,21 +91,48 @@ nav li{
 /*MAIN*/
 /*Creo la row con le col*/
 .row{
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
     margin: 0 -10px;
     display: flex;
     flex-wrap: wrap;    
 }
 .col{   
-    border: 2px dotted blue;
+    /*border: 2px dotted blue;*/
     flex-basis: calc(100% / 3);
     padding: 10px;
 }
 /*all'interno delle col inserisco le card*/
 .card{
     display: flex;
+    flex-direction: column;
 }
 .card-image{
     height: 100%;
     width: auto;
+    display: block;
+}
+/*Creo lo spazio per inserire il testo sull'immagine*/
+.card-box{
+    /*border: 1px solid darkblue;*/
+    position: relative;
+}
+.card-label{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.label.sale{
+    background-color: red;
+}
+.label.sustain{
+    content:"Sostenibilità";
+    background-color: green;    
+}
+.liked{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 3rem;
+    padding: 0 14px;
+    background-color: #fff;
 }
