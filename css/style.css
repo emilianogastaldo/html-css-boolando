@@ -132,7 +132,7 @@ nav li{
     position: absolute;
     right: 0;
     top: 10px;
-    font-size: 3rem;
-    padding: 0 14px;
+    font-size: 2rem;
+    padding: 10px 15px;
     background-color: #fff;
 }
