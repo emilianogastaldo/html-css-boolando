@@ -8,6 +8,7 @@
 /*GENERICS*/
 body{
     padding-top: 100px;
+    background-color: lightgoldenrodyellow;
 }
 img{
     max-width: 100%;
@@ -61,4 +62,26 @@ nav li{
     flex-basis: 20%;
     align-self: center;
     text-align: right;
+}
+
+/*MAIN*/
+/*Creo la row con le col*/
+.row{
+    border: 1px dashed red;
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+.col{   
+    border: 2px dotted blue;
+    flex-basis: calc(100% / 3);
+    padding: 10px;
+}
+/*all'interno delle col inserisco le card*/
+.card{
+    display: flex;
+}
+.card-image{
+    height: 100%;
+    width: auto;
 }
