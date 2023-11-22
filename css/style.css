@@ -70,11 +70,12 @@ header{
     right: 0;
     box-shadow: 2px 2px 1px gray;    
 }
-nav{
+.navbar{
     height: 80px;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
+    /*align-items: center;*/
 }
 nav ul{
     margin: 0 -10px;
@@ -82,7 +83,7 @@ nav ul{
 nav li{
     padding: 0 10px;
 }
-.navbar{
+.nav-menu{
     flex-basis: 20%;
     align-self: center;
     gap: 16px;
