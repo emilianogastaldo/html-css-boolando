@@ -133,8 +133,7 @@ nav li{
 .label.sale{
     background-color: red;
 }
-.label.sustain{
-    content:"Sostenibilità";
+.label.sustain{    
     background-color: green;    
 }
 .liked{
