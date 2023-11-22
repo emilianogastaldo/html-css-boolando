@@ -114,10 +114,7 @@ nav li{
 }
 .card-image{
     height: 100%;
-    width: auto;
-    /*display: block;*/
-    position: relative;
-    z-index: -2;
+    position: relative;    
 }
 
 /*Creo lo spazio per inserire il testo sull'immagine*/
